@@ -24,10 +24,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Muestra los elementos del menú en línea/horizontalmente */
 }
 
 .menu li {
-    display: inline-block; /* Muestra los elementos del menú en línea/horizontalmente */
     margin-right: 20px; /* Espacio entre elementos del menú */
 }
 
@@ -36,3 +36,4 @@
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     color: white; /* Color del texto del enlace */
 }
+
