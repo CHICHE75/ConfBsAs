@@ -1,0 +1,38 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    color: white; /* Color del texto en la barra de navegación */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilo para el logotipo */
+.logo {
+    width: 40px; /* Ancho de la imagen del logotipo */
+    margin-right: 10px;
+}
+
+/* Estilo para el título */
+.title {
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-right: 20px; /* Margen a la derecha del título */
+}
+
+/* Estilos para los elementos del menú */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block; /* Muestra los elementos del menú en línea/horizontalmente */
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+/* Estilos para los enlaces del menú */
+.menu li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color del texto del enlace */
+}
