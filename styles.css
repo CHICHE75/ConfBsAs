@@ -9,8 +9,8 @@
 
 /* Estilo para el logotipo */
 .logo {
-    width: 40px; /* Ancho de la imagen del logotipo */
-    margin-right: 10px;
+    width: 100px; /* Ancho de la imagen del logotipo */
+    margin-left: 200px;
 }
 
 /* Estilo para el título */
@@ -24,11 +24,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Muestra los elementos del menú en línea/horizontalmente */
+    display: inline-flex; /* Muestra los elementos del menú en línea/horizontalmente */
 }
 
 .menu li {
-    margin-right: 20px; /* Espacio entre elementos del menú */
+    margin-right: 30px; /* Espacio entre elementos del menú */
 }
 
 /* Estilos para los enlaces del menú */
@@ -37,3 +37,36 @@
     color: white; /* Color del texto del enlace */
 }
 
+.encabezado {
+    position: relative;
+
+}
+
+/* Estilos para la imagen */
+.encabezado img {
+    width: 100%;
+    height: 80vh;
+    
+}
+
+/* Estilos para el contenedor de texto */
+.texto-superpuesto {
+    position: absolute;
+    top: 50%; /* Alinea verticalmente al centro de la imagen */
+    right: 0; /* Alinea el contenedor de texto al lado derecho de la imagen */
+    transform: translate(0, -50%); /* Alinea verticalmente al centro de la imagen */
+    padding: 10px;
+    max-width: 40%;
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+/* Estilos para el título */
+.texto-superpuesto h2 {
+    text-align: right;
+    color: white; /* Color del texto en blanco */
+}
+
+/* Estilos para el texto */
+.texto-superpuesto p {
+    color: white; /* Color del texto en blanco */
+}
