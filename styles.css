@@ -88,10 +88,41 @@
     border: 1px solid #28a745; /* Borde verde */
 }
 
+h6.text-center {
+    margin-top: 10px;
+}
 
 /*estilo para las cards*/
 
-.cards {
-    padding: 8px;
+.custom-card {
+    height: 100%;
 }
+.custom-img {
+    height: 300px; /* Ajusta la altura de la imagen según tus necesidades */
+}
+
+
+    /* Estilos para los botones "Javascript" */
+    .btn-javascript {
+        background-color: yellow;
+        color: black;
+    }
+
+    /* Estilos para los botones "React" */
+    .btn-react {
+        background-color: turquoise;
+        color: black;
+    }
+
+    /* Estilos para el botón "Negocios" */
+    .btn-negocios {
+        background-color: gray;
+        color: white;
+    }
+
+    /* Estilos para el botón "Startups" */
+    .btn-startups {
+        background-color: red;
+        color: white;
+    }
 
