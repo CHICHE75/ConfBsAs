@@ -126,3 +126,15 @@ h6.text-center {
         color: white;
     }
 
+
+    /* Estilos para honolulu */
+    .divDoble .col-6.d-inline.divDoble {
+        background-color: #3d4447; /* Color de fondo gris */
+        padding: 20px;
+        
+    }
+
+    .divDoble .col-6 {
+        margin: 0;
+        padding: 0;
+    }
