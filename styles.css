@@ -98,7 +98,7 @@ h6.text-center {
     height: 100%;
 }
 .custom-img {
-    height: 300px; /* Ajusta la altura de la imagen según tus necesidades */
+    height: 300px; 
 }
 
 
@@ -129,7 +129,7 @@ h6.text-center {
 
     /* Estilos para honolulu */
     .divDoble .col-6.d-inline.divDoble {
-        background-color: #3d4447; /* Color de fondo gris */
+        background-color: #3d4447; 
         padding: 20px;
         
     }
@@ -138,3 +138,36 @@ h6.text-center {
         margin: 0;
         padding: 0;
     }
+
+    /*formulario*/
+    .botonEnviar {
+        background-color: #8BC34A; 
+        color: #fff; 
+        
+      }
+
+
+      
+/* Estilos para el footer */
+.pie {
+    background-color: #1c445a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 5vh; 
+    padding-bottom: 20px;
+  }
+  
+  
+  .pie p {
+    margin: 0;
+  }
+  
+  /* Estilos para los enlaces del footer al pasar el ratón por encima (puedes ajustarlos según tus necesidades) */
+  .pie p:hover {
+    text-decoration: underline;
+  }
+  
+  
