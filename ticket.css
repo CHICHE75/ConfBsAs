@@ -1,0 +1,68 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    color: white; /* Color del texto en la barra de navegación */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilo para el logotipo */
+.logo {
+    width: 100px; /* Ancho de la imagen del logotipo */
+    margin-left: 200px;
+}
+
+/* Estilo para el título */
+.title {
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-right: 20px; /* Margen a la derecha del título */
+}
+
+/* Estilos para los elementos del menú */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Muestra los elementos del menú en línea/horizontalmente */
+}
+
+.menu li {
+    margin-right: 30px; /* Espacio entre elementos del menú */
+}
+
+/* Estilos para los enlaces del menú */
+.menu li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color del texto del enlace */
+}
+
+.encabezado {
+    position: relative;
+
+}
+
+/* Estilos para la imagen con opacidad */
+.encabezado img {
+    width: 100%;
+    height: 80vh;
+    opacity: 0,8; 
+}
+
+/*cuadrados*/
+.square {
+    width: 5cm;
+    height: 5cm;
+    background-color: transparent;
+    border: 1px solid #080a0c;
+    margin: 0.1cm; /* 1 milímetro de margen horizontal */
+    display: inline-block; /* Cambia a inline-block para alinear horizontalmente */
+    text-align: center;
+    vertical-align: top;
+}
+
+.square h2, .square p, .square .percentage {
+    margin: 0;
+}
+
+
