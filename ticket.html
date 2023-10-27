@@ -29,7 +29,7 @@
                             <h2>Estudiante</h2>
                             <p>Tienen un descuento</p>
                             <span class="percentage">80%</span>
-                            <p>*presentación de documentación</p>   
+                            <p>*presentación de documentación</p>
                         </div>
                         <div class="square">
                             <h2>Trainee</h2>
@@ -47,6 +47,72 @@
                 </div>
             </div>
         </div>
+    
+        <p class="text-center">VENTAS</p>
+        <h1 class="text-center">VALOR DE TICKET $200</h1>
+    
+        <!-- Formulario con campos de texto para Nombre, Apellido y Correo -->
+        <form class="text-left">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo">
+            </div>
+            
+
+            <div class="form-group">
+                <label for="Categoria">Categoría</label>
+                <select class="form-control" id="categoria">
+                    <option value="Estudiante" data-porcentaje="80">Estudiante</option>
+                    <option value="Trainee" data-porcentaje="50">Trainee</option>
+                    <option value="Junior" data-porcentaje="15">Junior</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad" step="1" min="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="total">Total a Pagar $</label>
+                <input type="text" class="form-control" id="total" placeholder="0.00" readonly>
+            </div>
+            
+            <button type="button" class="btn btn-primary" id="calcularTotal">Calcular Total</button>
+            <button type="button" class="btn btn-danger" id="borrarTotal">Borrar Total</button>
+            
+            <script>
+                document.getElementById("calcularTotal").addEventListener("click", function() {
+                    var categoriaSelect = document.getElementById("categoria");
+                    var selectedCategoria = categoriaSelect.options[categoriaSelect.selectedIndex];
+                    var porcentajeDescuento = parseFloat(selectedCategoria.getAttribute("data-porcentaje"));
+                    var cantidad = parseInt(document.getElementById("cantidad").value);
+                    
+                    if (!isNaN(cantidad)) {
+                        var precioUnitario = 200; // Precio unitario
+                        var total = cantidad * precioUnitario * (1 - porcentajeDescuento / 100);
+            
+                        document.getElementById("total").value = total.toFixed(2);
+                    }
+                });
+            
+                document.getElementById("borrarTotal").addEventListener("click", function() {
+                    document.getElementById("cantidad").value = "";
+                    document.getElementById("total").value = "0.00";
+                });
+            </script>
+            
+            
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
